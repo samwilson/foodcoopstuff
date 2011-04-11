@@ -1,0 +1,60 @@
+.clear {
+	clear: both;
+}
+
+.error {
+	text-align: center;
+	color: red;
+}
+
+.login-form {
+	margin: auto;
+	width:  40%;
+}
+
+.login-form input {
+	width: 100%;
+}
+
+form .line {
+	clear: both;
+}
+
+form .input {
+	float: left;
+}
+
+form .input input, form .input select {
+	width: 100%;
+	border: 1px solid gray;
+}
+
+form .submit {
+	clear: both;
+	text-align: right;
+	margin-top: 1em;
+}
+
+form .submit input {
+	border: 3px double gray;
+}
+
+form fieldset legend {
+	font-weight: bolder;
+}
+
+.tools {
+    text-align: right;
+}
+
+.urhere {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#footer {
+	font-size: smaller;
+	margin: auto;
+	width: 80%;
+}

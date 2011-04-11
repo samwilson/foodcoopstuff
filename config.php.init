@@ -1,0 +1,22 @@
+<?php
+
+$dbuser= "";
+$dbpass= "";
+$dbhost= "";
+$dbname= "";;
+
+$path = '/home/username/pear/php/';
+set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+
+date_default_timezone_set ("Australia/Canberra");
+
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+if (!$conn) die( "ERROR: Unable to connect to DB: " . mysql_error() );
+
+if (!mysql_select_db($dbname))
+  die( "ERROR: Unable to select database <em>$dbname</em>: " . mysql_error() );
+
+if ( !mysql_query("SET time_zone = 'Australia/Canberra'") ) die(mysql_error());
+
+?>
